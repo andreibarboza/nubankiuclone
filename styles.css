@@ -24,7 +24,8 @@
     font-size: 1.125em;
     background-color: #fafafa;
     letter-spacing: -0.04em;
-    color: rgb(68, 63, 63);
+    color: rgb(114, 107, 107);
+    font-weight: 500;
 }
 
 .rightHeader {
@@ -53,6 +54,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    background-color: #fafafa;
+    background: linear-gradient(90deg, rgba(250,250,250,0.5) 5%, rgb(250, 250, 250) 10%);
+    border-radius: 10px
+}
+
+.leftHeader i {
+    color: rgb(114, 107, 107);
+    margin-left: 10px;
 }
 
 .bodyCont1 {
@@ -107,14 +117,13 @@
     display: flex;
     width: 40vw;
     height: auto;
-
     align-items: center;
 }
 
 .imgBox1 img {
     display: flex;
     width: 31vw;
-    height: 500px;
+    height: 65vh;
     
 }
 
@@ -204,7 +213,7 @@
 }
 
 .textCont2 {
-    margin-left: 150px;
+    margin-left: 10vw;
     font-weight: 500;
 }
 
@@ -267,16 +276,16 @@
 .box31{
     display: flex;
     align-items: center;
-    width: 40vw;
+    width: 50vw;
     height: 720px;
 }
 
 .text31 {
     display: flex;
     flex-direction: column;
-    margin-left: 160px;
+    margin-left: 10vw;
     font-weight: 500;
-    width: 30vw;
+    min-width: 350px;
     letter-spacing: -0.04rem;
 }
 
@@ -328,8 +337,8 @@
 }
 
 .text32 img {
-    width: 700px;
-    height: 600px;
+    width: 50vw;
+    height: 70vh;
 }
 
 .bodyCont4 {
@@ -342,9 +351,9 @@
 .text41 {
     display: flex;
     flex-direction: column;
-    margin-left: 160px;
+    margin-left: 10vw;
     font-weight: 500;
-    width: 30vw;
+    min-width: 400px;
     letter-spacing: -0.04rem;
 }
 
@@ -356,8 +365,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     width: 50vw;
+    margin-left: 10vw;
 }
 
 .text42 {
@@ -391,8 +401,9 @@
 
 .box42 img {
     display: flex;
-    width: 300px;
-    height: 600px;
+    width: 23vw;
+    height: 78vh;
+    min-height: 500px;
 }
 
 .bodyCont5 {
@@ -407,7 +418,7 @@
     height: auto;
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 10vw;
 }
 
 .boxSpan5 {
@@ -478,7 +489,7 @@
 }
 
 .box61 {
-    margin-left: 150px;
+    margin-left: 10vw;
     width: 50vw;
     font-weight: 500;
 }
@@ -527,7 +538,7 @@
 
 .box71 {
     display: flex;
-    margin-left: 150px;
+    margin-left: 10vw;
     flex-direction: column;
     width: 50vw;
     justify-content: center;
@@ -584,7 +595,7 @@
 .box81 {
     display: flex;
     width: 50vw;
-    margin-left: 150px;
+    margin-left: 10vw;
     color: white;
 }
 
@@ -618,5 +629,62 @@
 
 .text81 > i {
     margin-left: 15px;
-    
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 780px;
+    width: auto;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.footer > div:nth-child(1) {
+    padding-top: 5vw;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 50vh;
+    font-size: 1.25rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.15rem;
+}
+
+.footer1  div:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.footer1 div:nth-child(1) {
+    width: 25vw;
+}
+
+.footer1div:nth-child(2) {
+    width: 30vw;
+}
+
+.footer1 div:nth-child(3) {
+    width: 20vw;
+}
+
+
+
+.textFoot > div {
+    font-weight: 500;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.textFoot > div:hover {
+    color: #9469ad;
+}
+
+.textFoot > div:nth-child(1) {
+    font-weight: unset;
+    pointer-events: none;
 }
